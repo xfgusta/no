@@ -1,12 +1,11 @@
 all:
-	cc no.c -o no
+    cc no.c -o no
 
 install:
-	install -m 0755 no /usr/local/bin/no
+    install -m 0755 no /usr/local/bin/no
 
 uninstall:
-	rm -f /usr/local/bin/no
+    rm -f /usr/local/bin/no
 
 clean:
-	rm -f no
-
+    rm -f no
