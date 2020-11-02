@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 // repeatedly output str until there is a error; then fail
 #define NO(str) {           \
     while(puts(str) != EOF) \
         continue;           \
-    return 1;               \
+    return EXIT_FAILURE;    \
 }
 
 int main(int argc, char **argv) {
