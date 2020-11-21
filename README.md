@@ -4,8 +4,6 @@ Small _no_ version of [_yes_](https://www.gnu.org/software/coreutils/manual/html
 
 _no_ prints the command line arguments, separated by spaces and followed by a newline, forever until it is killed. If no arguments are given, it prints 'n' followed by a newline forever until killed.
 
-Upon a write error, _no_ exits with status '1'. 
-
 ### Examples
 
 Prints 'n' forever until killed:
