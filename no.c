@@ -1,32 +1,10 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-// repeatedly output str until there is a error; then fail
-#define NO(str) {           \
-    while(puts(str) != EOF) \
-        continue;           \
-    return EXIT_FAILURE;    \
-}
 
 int main(int argc, char **argv) {
-    // no string specified
     if(argc == 1)
-        NO("n");
-    
-    // static malloc for line (specified string)
-    size_t len = 0;
-    for(size_t i = 1; i < argc; i++)
-        len += strlen(argv[i]) + 1;
-    char line[--len];
-    
-    // copy argv[1]..argv[argc-1] to line
-    for(size_t i = 1; i < argc; i++) {
-        strcat(line, argv[i]);
-        strcat(line, " ");
-    }
-    line[len] = 0;
-    
-    NO(line);
+        while(1)
+            printf("n\n");
+    while(1)
+        for(int i = 1; i < argc; i++)
+            printf("%s%c", argv[i], i+1 == argc ? '\n' : ' ');
 }
-
