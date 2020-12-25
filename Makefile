@@ -1,11 +1,12 @@
-all:
-	cc no.c -o no
+no:
+	gcc no.c -o no
 
 install:
-	install -m 0755 no /usr/local/bin/no
+	mkdir -p $(DESTDIR)/usr/bin
+	install -m 0755 no $(DESTDIR)/usr/bin/no
 
 uninstall:
-	rm -f /usr/local/bin/no
+	rm -f $(DESTDIR)/usr/bin/no
 
 clean:
 	rm -f no
