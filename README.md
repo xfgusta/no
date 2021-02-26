@@ -4,7 +4,7 @@ Small _no_ version of [_yes_](https://www.gnu.org/software/coreutils/manual/html
 
 _no_ prints the command line arguments, separated by spaces and followed by a newline, forever until it is killed. If no arguments are given, it prints 'n' followed by a newline forever until killed.
 
-# Examples
+## Examples
 
 Prints 'n' forever until killed:
 
@@ -26,31 +26,14 @@ hello cruel world
 ...
 ```
 
-# Install
-
-## Fedora
-
-```
-# dnf copr enable sirguxx/no
-# dnf in no
-```
-
-## From source
+## Install
 
 ```
 $ make
 # make install
 ```
 
-# Uninstall
-
-## Fedora
-
-```
-# dnf rm no
-```
-
-## From source
+## Uninstall
 
 ```
 # make uninstall
