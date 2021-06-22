@@ -4,37 +4,45 @@ Small _no_ version of [_yes_](https://www.gnu.org/software/coreutils/manual/html
 
 _no_ prints the command line arguments, separated by spaces and followed by a newline, forever until it is killed. If no arguments are given, it prints 'n' followed by a newline forever until killed.
 
-## Examples
+## Installation
 
-Prints 'n' forever until killed:
+#### Requirements
+
++ make
++ gcc
+
+Build and install with:
 
 ```
-$ no
+git clone https://github.com/xfgusta/no.git
+cd no
+make
+```
+
+And then `make install` as root.
+
+To uninstall, run `make uninstall` as root as well.
+
+## Example
+
+`no` prints 'n' forever until killed:
+
+```
 n
 n
 n
-...
 ```
 
-Prints 'hello cruel world' forever until killed:
+`no hello cruel world` prints 'hello cruel world' forever until killed:
 
 ```
-$ no hello cruel world
 hello cruel world
 hello cruel world
 hello cruel world
-...
 ```
 
-## Install
+## License
 
-```
-$ make
-# make install
-```
+The MIT License (MIT)
 
-## Uninstall
-
-```
-# make uninstall
-```
+Copyright (c) 2021 Gustavo Costa
